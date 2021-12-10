@@ -1,6 +1,7 @@
 const button = document.querySelector("button");
-const input1 = document.getElementById("num1");
-const input2 = document.getElementById("num2");
+// typecasting
+const input1 = document.getElementById("num1")! as HTMLInputElement;
+const input2 = document.getElementById("num2")! as HTMLInputElement;
 
 
 function add(num1: number, num2: number): number {
