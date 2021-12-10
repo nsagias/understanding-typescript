@@ -7,7 +7,11 @@ function add(num1:number, num2:number, showResult: boolean): number {
   if (typeof num1 !== "number" || typeof num2 !== "number") {
     throw new Error ('runtime type checking');
   }
-  return num1 + num2;
+  if (showResult) {
+    console.log( num1 + num2);
+  } else {
+    return num1 + num2;
+  }
 }
 
 const number1 = 5;
