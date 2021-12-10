@@ -15,9 +15,16 @@ function add(num1:number, num2:number, showResult: boolean, phrase: string): num
   }
 }
 
-const number1 = 5;
-const number2 = 2.8;
-const printResult = true;
-const phraseResult = "Result is: ";
+let number1: number;
+number1 = 5;
+
+let number2: number;
+number2 = 2.8;
+
+let printResult: boolean;
+printResult = true;
+
+let phraseResult: string;
+phraseResult = "Result is: ";
 
 add(number1, number2, printResult, phraseResult);
