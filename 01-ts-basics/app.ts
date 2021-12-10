@@ -1,5 +1,3 @@
-import { type } from "os";
-
 interface AddFunc {
   (num1: number, num2: number, showResult: boolean): number;
 }
