@@ -3,7 +3,7 @@ const input1 = document.getElementById("num1");
 const input2 = document.getElementById("num2");
 
 
-function add(num1, num2) {
+function add(num1: number, num2: number): number {
     return num1  + num2;
 }
 
