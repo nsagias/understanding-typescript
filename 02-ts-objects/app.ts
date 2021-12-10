@@ -14,3 +14,25 @@ const person: Person = {
   name: "Dingo",
   age: 1000
 };
+
+
+// nested objects
+interface Product {
+  id: string;
+  price: number;
+  tags: string[];
+  details: {
+    title: string;
+    description: string;
+  }
+}
+
+const product: Product = {
+  id: 'abc1',
+  price: 12.99,
+  tags: ['great-offer', 'hot-and-new'],
+  details: {
+    title: 'Red Carpet',
+    description: 'A great carpet - almost brand-new!'
+  }
+}
