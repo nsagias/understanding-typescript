@@ -11,5 +11,5 @@ function add(num1: number, num2: number): number {
 
 button.addEventListener("click", function() {
   console.log(
-    add(input1.value, input2.value));
+    add(+input1.value, +input2.value));
 });
