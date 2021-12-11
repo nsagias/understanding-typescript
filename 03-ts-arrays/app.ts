@@ -3,11 +3,13 @@ interface Person2 {
   name: string;
   age: number;
   hobbies: string[];
+  role: (string | number)[];
 }
 const person2: Person2 = {
   name: "Dingo",
   age: 1000,
-  hobbies: ['sports', 'cookies']
+  hobbies: ['sports', 'cookies'],
+  role: [1, 'player']
 };
 
 let favouriteActivitiesString: string[];
