@@ -3,9 +3,12 @@ type CombinerConversionType = 'as-number' | 'as-string';
 type UserType = { name: string, age: number}; // custom alias types objects
 
 interface User {
-  // name: string,
-  // age: number,
-  user: UserType;
+  name: string;
+  age: number;
+}
+
+function greet(user: UserType){
+  console.log(`Hello i am ${user.name}`)
 }
 
 interface Combine2 {
