@@ -19,8 +19,19 @@ function printResult2(num:number): void {
   console.log('Result is: ' + num)
 }
 
+
+// function types with Callbacks
+function addFunctionWithCallback(num1: number, num2:number, callback: (result: number) => void) {
+  const result = num1 + num2;
+  callback(result);
+}
+
+
+
 const printResult3: PrintFunc = (num:number): void => undefined;
 const printResult4: PrintFunc = (num:number): void => console.log(`Expreession Result is: ${num}`);
+
+
 
 // function declaration
 printResult2(addV2(10,5));
