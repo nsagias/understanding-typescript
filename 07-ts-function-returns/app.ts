@@ -21,4 +21,8 @@ function printResult2(num:number): void {
 
 const printResult3: PrintFunc = (num:number): void => undefined;
 
+// function declaration
 printResult2(addV2(10,5))
+
+// function expression
+printResult3(addV3(8,3))
