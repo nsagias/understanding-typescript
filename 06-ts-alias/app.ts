@@ -4,16 +4,16 @@ type CombinerConversionType = 'as-number' | 'as-string';
 
 interface Combine2 {
   (
-    input1: number | string, 
-    input2: number | string, 
-    resultConversion: 'as-number' | 'as-string'
+    input1: CombinerType, 
+    input2: CombinerType, 
+    resultConversion: CombinerConversionType
   );
 }
 
 function combine2(
-  input1: number | string, 
-  input2: number | string, 
-  resultConversion: 'as-number' | 'as-string') {
+  input1: CombinerType, 
+  input2: CombinerType, 
+  resultConversion: CombinerConversionType) {
   let result;
   if (
     typeof input1 === "number" 
