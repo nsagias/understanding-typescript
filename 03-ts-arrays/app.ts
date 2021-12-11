@@ -10,6 +10,8 @@ const person1: Person = {
   hobbies: ['sports', 'cookies']
 };
 
+let favouriteActivities: string[];
+
 
 
 interface Product {
