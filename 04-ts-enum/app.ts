@@ -1,4 +1,16 @@
 
+enum Role {
+  ADMIN, 
+  READ_ONLY, 
+  AUTHOR
+};
+
+enum RoleString {
+  ADMIN = "ADMIN", 
+  READ_ONLY = "READ_ONLY", 
+  AUTHOR = "AUTHOR"
+}
+
 interface Person3 {
   name: string;
   age: number;
