@@ -4,22 +4,6 @@ type CombinerType = number | string;
 type CombinerConversionType = 'as-number' | 'as-string';
 type UserType = { name: string, age: number}; // custom alias types objects
 
-interface User {
-  name: string;
-  age: number;
-}
-
-function greet(user: UserType){
-  console.log(`Hello i am ${user.name}`)
-}
-
-function isOlder(user: UserType, checkAge: number) {
-  return checkAge > user.age
-}
-
-const greetUser = greet({name:"Nick", age: 100});
-const isOlderThanUser = isOlder({name:"Nick", age: 100}, 10);
-
 
 interface Combine2 {
   (
@@ -50,3 +34,20 @@ function combine2(
 
 const combineAges2 = combine2(30, 26, 'as-number');
 const combineNames2 = combine2("Bob", "toaster", 'as-string')
+
+
+interface User {
+  name: string;
+  age: number;
+}
+
+function greet(user: UserType){
+  console.log(`Hello i am ${user.name}`)
+}
+
+function isOlder(user: UserType, checkAge: number) {
+  return checkAge > user.age
+}
+
+const greetUser = greet({name:"Nick", age: 100});
+const isOlderThanUser = isOlder({name:"Nick", age: 100}, 10);
