@@ -1,8 +1,8 @@
-interface AddFunc2 {
-  (num1: number, num2: number): number;
+interface Combine {
+  (input1: number, input2: number);
 }
 
-function addNum(num1:number, num2:number): number {
-  const result = num1 + num2;
+function combine(input1:number, input2:number) {
+  const result = input1 + input2;
   return result;
 }
