@@ -2,12 +2,12 @@
 interface Person {
   name: string;
   age: number;
-  hobbies: [];
+  hobbies: string[];
 }
 const person1: Person = {
   name: "Dingo",
   age: 1000,
-  hobbies: []
+  hobbies: ['sports', 'cookies']
 };
 
 
