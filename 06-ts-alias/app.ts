@@ -1,4 +1,5 @@
-
+type CombinerType = number | string;
+type CombinerConversionType = 'as-number' | 'as-string';
 
 
 interface Combine2 {
