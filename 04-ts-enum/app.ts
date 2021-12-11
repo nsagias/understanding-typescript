@@ -15,13 +15,17 @@ interface Person3 {
   name: string;
   age: number;
   hobbies: string[];
-  role: [number, string]; // tuple
+  role: [number, string]; 
+  enum_role_value?: Role;
+  enum_role_string?: RoleString;
 }
 const person3: Person3 = {
   name: "Dingo",
   age: 1000,
   hobbies: ['sports', 'cookies'],
-  role: [1, 'player']
+  role: [1, 'player'],
+  enum_role_value: Role.ADMIN,
+  enum_role_string: RoleString.ADMIN
 };
 
 
