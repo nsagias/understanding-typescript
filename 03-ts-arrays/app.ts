@@ -3,7 +3,7 @@ interface Person2 {
   name: string;
   age: number;
   hobbies: string[];
-  role: (string | number)[];
+  role: [number, string]; // tuple
 }
 const person2: Person2 = {
   name: "Dingo",
