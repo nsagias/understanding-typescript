@@ -10,7 +10,9 @@ const person1: Person2 = {
   hobbies: ['sports', 'cookies']
 };
 
-let favouriteActivities: string[];
+let favouriteActivitiesString: string[];
+let favouriteActivitiesNumber: number[];
+let favouriteActivitiesAny: any[];
 
 
 
