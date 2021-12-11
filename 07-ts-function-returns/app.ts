@@ -28,3 +28,7 @@ printResult2(addV2(10,5));
 // function expression
 printResult3(addV3(8,3));  // does not return or console.log
 printResult4(addV3(8,3));
+
+
+// function as types
+let someRandomFunction: Function;
