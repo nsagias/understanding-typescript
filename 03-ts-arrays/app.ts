@@ -4,7 +4,7 @@ interface Person2 {
   age: number;
   hobbies: string[];
 }
-const person1: Person2 = {
+const person2: Person2 = {
   name: "Dingo",
   age: 1000,
   hobbies: ['sports', 'cookies']
@@ -14,7 +14,9 @@ let favouriteActivitiesString: string[];
 let favouriteActivitiesNumber: number[];
 let favouriteActivitiesAny: any[];
 
-
+for (const hobby of person2.hobbies) {
+  console.log(hobby.toUpperCase());
+}
 
 interface Product2 {
   id: string;
@@ -26,7 +28,7 @@ interface Product2 {
   }
 }
 
-const product1: Product2 = {
+const product2: Product2 = {
   id: 'abc1',
   price: 12.99,
   tags: ['great-offer', 'hot-and-new'],
