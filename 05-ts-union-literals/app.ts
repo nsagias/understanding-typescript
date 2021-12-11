@@ -24,5 +24,5 @@ function combine(
 }
 
 
-const combineAges = combine(30, 26, 'as-number');
-const combineNames = combine("Bob", "toaster", 'as-string')
+const combineAges1 = combine(30, 26, 'as-number');
+const combineNames1 = combine("Bob", "toaster", 'as-string')

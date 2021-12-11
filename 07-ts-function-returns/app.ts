@@ -40,9 +40,9 @@ let someRandomFunctionUsingArrowsAndParams1: (a: number, b: number) => number;
 
 
 // function types with Callbacks
-function addFunctionWithCallback(num1: number, num2:number, callback: (result: number) => void) {
+function addFunctionWithCallback1(num1: number, num2:number, callback: (result: number) => void) {
   const result = num1 + num2;
   callback(result);
 }
 
-addFunctionWithCallback(10, 11, (result) => { console.log("this is anonymous result: ",result)});
+addFunctionWithCallback1(10, 11, (result) => { console.log("this is anonymous result: ",result)});

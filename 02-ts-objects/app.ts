@@ -10,7 +10,7 @@ interface Person {
   name: string;
   age: number
 }
-const person: Person = {
+const person1: Person = {
   name: "Dingo",
   age: 1000
 };
@@ -27,7 +27,7 @@ interface Product {
   }
 }
 
-const product: Product = {
+const product1: Product = {
   id: 'abc1',
   price: 12.99,
   tags: ['great-offer', 'hot-and-new'],
