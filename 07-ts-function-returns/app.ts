@@ -44,3 +44,5 @@ function addFunctionWithCallback(num1: number, num2:number, callback: (result: n
   const result = num1 + num2;
   callback(result);
 }
+
+addFunctionWithCallback(10, 11, (result) => { console.log("this is anonymous result: ",result)});
