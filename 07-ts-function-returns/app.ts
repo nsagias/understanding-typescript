@@ -30,5 +30,7 @@ printResult3(addV3(8,3));  // does not return or console.log
 printResult4(addV3(8,3));
 
 
-// function as types
+// function types
 let someRandomFunction: Function;
+let someRandomFunctionUsingArrows: () => number;
+let someRandomFunctionUsingArrowsAndParams: (a: number, b: number) => number;
