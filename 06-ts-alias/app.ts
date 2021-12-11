@@ -1,6 +1,12 @@
 type CombinerType = number | string;
 type CombinerConversionType = 'as-number' | 'as-string';
+type UserType = { name: string, age: number}; // custom alias types objects
 
+interface User {
+  // name: string,
+  // age: number,
+  user: UserType;
+}
 
 interface Combine2 {
   (
