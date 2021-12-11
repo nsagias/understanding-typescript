@@ -6,7 +6,7 @@ interface PrintFunc {
   (num: number): void;
 }
 
-function addV2(num1:number, num2:number): number {
+function addV5(num1:number, num2:number): number {
   const result = num1 + num2;
   return result;
 }
@@ -29,8 +29,8 @@ const printResult7: PrintFunc = (num:number): void => console.log(`Expreession R
 printResult2(addV2(10,5));
 
 // function expression
-printResult3(addV3(8,3));  // does not return or console.log
-printResult4(addV3(8,3));
+printResult3(addV5(8,3));  // does not return or console.log
+printResult4(addV5(8,3));
 
 
 // function types
