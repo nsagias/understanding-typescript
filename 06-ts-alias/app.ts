@@ -1,7 +1,7 @@
 
 
 
-interface Combine {
+interface Combine2 {
   (
     input1: number | string, 
     input2: number | string, 
@@ -9,7 +9,7 @@ interface Combine {
   );
 }
 
-function combine(
+function combine2(
   input1: number | string, 
   input2: number | string, 
   resultConversion: 'as-number' | 'as-string') {
@@ -27,5 +27,5 @@ function combine(
 }
 
 
-const combineAges = combine(30, 26, 'as-number');
-const combineNames = combine("Bob", "toaster", 'as-string')
+const combineAges2 = combine2(30, 26, 'as-number');
+const combineNames2 = combine2("Bob", "toaster", 'as-string')
