@@ -1,5 +1,3 @@
-import { userInfo } from "os";
-
 type CombinerType = number | string;
 type CombinerConversionType = 'as-number' | 'as-string';
 type UserType = { name: string, age: number}; // custom alias types objects
