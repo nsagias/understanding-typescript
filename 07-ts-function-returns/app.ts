@@ -11,17 +11,17 @@ function addV2(num1:number, num2:number): number {
   return result;
 }
 
-const addV3: AddFunc2 = (num1: number, num2: number): number => num1 + num2;
+const addV4: AddFunc2 = (num1: number, num2: number): number => num1 + num2;
 
 
 // function void type
-function printResult2(num:number): void {
+function printResult5(num:number): void {
   console.log('Result is: ' + num)
 }
 
 
-const printResult3: PrintFunc = (num:number): void => undefined;
-const printResult4: PrintFunc = (num:number): void => console.log(`Expreession Result is: ${num}`);
+const printResult6: PrintFunc = (num:number): void => undefined;
+const printResult7: PrintFunc = (num:number): void => console.log(`Expreession Result is: ${num}`);
 
 
 
@@ -34,9 +34,9 @@ printResult4(addV3(8,3));
 
 
 // function types
-let someRandomFunction: Function;
-let someRandomFunctionUsingArrows: () => number;
-let someRandomFunctionUsingArrowsAndParams: (a: number, b: number) => number;
+let someRandomFunction1: Function;
+let someRandomFunctionUsingArrows1: () => number;
+let someRandomFunctionUsingArrowsAndParams1: (a: number, b: number) => number;
 
 
 // function types with Callbacks
