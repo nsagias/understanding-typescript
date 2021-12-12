@@ -1,4 +1,4 @@
-interface AddFunc2 {
+interface AddFunc {
   (num1: number, num2: number): number;
 }
 
@@ -6,22 +6,22 @@ interface PrintFunc {
   (num: number): void;
 }
 
-function addV5(num1:number, num2:number): number {
+function add(num1:number, num2:number): number {
   const result = num1 + num2;
   return result;
 }
 
-const addV4: AddFunc2 = (num1: number, num2: number): number => num1 + num2;
+const addV2: AddFunc = (num1: number, num2: number): number => num1 + num2;
 
 
 // function void type
-function printResult5(num:number): void {
+function printResult(num:number): void {
   console.log('Result is: ' + num)
 }
 
 
-const printResult6: PrintFunc = (num:number): void => undefined;
-const printResult7: PrintFunc = (num:number): void => console.log(`Expreession Result is: ${num}`);
+const printResult1: PrintFunc = (num:number): void => undefined;
+const printResult2: PrintFunc = (num:number): void => console.log(`Expreession Result is: ${num}`);
 
 
 
@@ -29,8 +29,8 @@ const printResult7: PrintFunc = (num:number): void => console.log(`Expreession R
 printResult2(addV2(10,5));
 
 // function expression
-printResult3(addV5(8,3));  // does not return or console.log
-printResult4(addV5(8,3));
+printResult1(addV2(8,3));  // does not return or console.log
+printResult2(addV2(8,3));
 
 
 // function types
