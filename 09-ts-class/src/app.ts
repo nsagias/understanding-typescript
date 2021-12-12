@@ -8,10 +8,10 @@ class Department {
     this.name = name;
   }
   describe(this: Department): void {
-    console.log(`
-      Department id: ${this.id} and 
-      Department name: ${this.name}
-      `);
+    const describeOutput =
+    `Department id: ${this.id}  
+Department name: ${this.name}`;
+    console.log(describeOutput);
   }
 
   addEmployee(employee:string): void {
