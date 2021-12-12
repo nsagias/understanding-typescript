@@ -1,1 +1,7 @@
-console.log('Your code goes here...');
+class Department {
+  name: string;
+  
+  constructor(name: string) {
+    this.name = name;
+  }
+}
