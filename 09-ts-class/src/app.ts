@@ -6,5 +6,5 @@ class Department {
   }
 }
 
-const marketing =new Department("Marketing");
-console.log(marketing);
+const marketing = new Department("Marketing");
+console.log(marketing)
