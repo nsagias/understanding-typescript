@@ -9,8 +9,12 @@ class Department {
     console.log(`Department name is: ${this.name}`);
   }
 
-  addEmployee(employee:string) {
+  addEmployee(employee:string): void {
     this.employees.push(employee);
+  }
+  
+  printEmployeeInfo(): void {
+    console.log(this.employees);
   }
 }
 
