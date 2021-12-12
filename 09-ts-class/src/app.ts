@@ -1,8 +1,10 @@
 class Department {
+  private id: string;
   private name: string;
   private employees: string[] = [];
   
-  constructor(name: string) {
+  constructor(id: string, name: string) {
+    this.id = id;
     this.name = name;
   }
   describe(this: Department): void {
@@ -20,7 +22,7 @@ class Department {
   }
 }
 
-const marketing = new Department("Marketing");
+const marketing = new Department("1", "Marketing");
 
 marketing.describe();
 
