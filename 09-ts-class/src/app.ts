@@ -4,7 +4,11 @@ class Department {
   constructor(name: string) {
     this.name = name;
   }
+  describe() {
+    console.log(`Department name is: ${this.name}`);
+  }
 }
 
 const marketing = new Department("Marketing");
-console.log(marketing);
+
+marketing.describe();
