@@ -4,7 +4,7 @@ class Department {
   constructor(name: string) {
     this.name = name;
   }
-  describe(): void {
+  describe(this: Department): void {
     console.log(`Department name is: ${this.name}`);
   }
 }
