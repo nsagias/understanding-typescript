@@ -1,9 +1,9 @@
 interface Combine {
   (
-    input1: number | string, 
+    input1: number | string,
     input2: number | string, 
     resultConversion: 'as-number' | 'as-string'
-  );
+  ): number | string | 'as-number' | 'as-string'
 }
 
 function combine1(
