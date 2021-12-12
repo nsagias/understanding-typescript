@@ -8,7 +8,10 @@ class Department {
     this.name = name;
   }
   describe(this: Department): void {
-    console.log(`Department name is: ${this.name}`);
+    console.log(`
+      Department id: ${this.id} and 
+      Department name: ${this.name}
+      `);
   }
 
   addEmployee(employee:string): void {
@@ -22,7 +25,7 @@ class Department {
   }
 }
 
-const marketing = new Department("1", "Marketing");
+const marketing = new Department("M", "Marketing");
 
 marketing.describe();
 
