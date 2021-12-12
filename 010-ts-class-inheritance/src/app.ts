@@ -35,9 +35,16 @@ marketing.printEmployeeInfo();
 
 
 class ITDepartment extends Department {
-
+  // admins: string[];
+  constructor(id: string, public admins: string[]){
+    super(id, "IT");
+    this.admins = admins;
+  }
 }
 
-const IT = new Department("IT", "Information Technology");
+const IT = new ITDepartment("IT",['Dingo']);
 IT.describe();
+IT.addEmployee("Tina");
+IT.addEmployee("Boo");
+IT.printEmployeeInfo();
 
