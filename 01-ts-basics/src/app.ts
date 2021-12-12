@@ -15,11 +15,11 @@ function add(num1:number, num2:number, showResult: boolean, phrase: string) {
   }
 }
 
-let number_1: number;
-number_1 = 5;
+let number1: number;
+number1 = 5;
 
-let number_2: number;
-number_2 = 2.8;
+let number2: number;
+number2 = 2.8;
 
 let printResult1: boolean;
 printResult1 = true;
@@ -27,4 +27,4 @@ printResult1 = true;
 let phraseResult1: string;
 phraseResult1 = "Result is: ";
 
-add(number_1, number_2, printResult1, phraseResult1);
+add(number1, number2, printResult1, phraseResult1);
