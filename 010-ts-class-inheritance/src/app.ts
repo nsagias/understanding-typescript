@@ -25,12 +25,19 @@ Department name: ${this.name}`;
   }
 }
 
+
 const marketing = new Department("M", "Marketing");
 
 marketing.describe();
-
 marketing.addEmployee("Dingo");
-marketing.printEmployeeInfo();
-
 marketing.addEmployee("Bingo");
 marketing.printEmployeeInfo();
+
+
+class ITDepartment extends Department {
+
+}
+
+const IT = new Department("IT", "Information Technology");
+IT.describe();
+
