@@ -10,7 +10,8 @@ class Department {
   }
 
   addEmployee(employee:string): void {
-    this.employees.push(employee);
+    // this.employees.push(employee);
+    this.employees = [...this.employees, employee];
   }
   
   printEmployeeInfo(): void {
