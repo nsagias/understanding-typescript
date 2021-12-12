@@ -1,26 +1,26 @@
 
-interface Person2 {
+interface Person {
   name: string;
   age: number;
   hobbies: string[];
   role: [number, string]; // tuple
 }
-const person3: Person2 = {
+const person: Person = {
   name: "Dingo",
   age: 1000,
   hobbies: ['sports', 'cookies'],
   role: [1, 'player']
 };
 
-let favouriteActivitiesString1: string[];
-let favouriteActivitiesNumber1: number[];
-let favouriteActivitiesAny1: any[];
+let favouriteActivitiesString: string[];
+let favouriteActivitiesNumber: number[];
+let favouriteActivitiesAny: any[];
 
-for (const hobby of person3.hobbies) {
+for (const hobby of person.hobbies) {
   console.log(hobby.toUpperCase());
 }
 
-interface Product2 {
+interface Product {
   id: string;
   price: number;
   tags: string[];
@@ -30,7 +30,7 @@ interface Product2 {
   }
 }
 
-const product3: Product2 = {
+const product3: Product = {
   id: 'abc1',
   price: 12.99,
   tags: ['great-offer', 'hot-and-new'],
