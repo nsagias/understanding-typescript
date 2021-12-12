@@ -11,7 +11,7 @@ enum RoleString {
   AUTHOR = "AUTHOR"
 }
 
-interface Person3 {
+interface Person {
   name: string;
   age: number;
   hobbies: string[];
@@ -19,7 +19,7 @@ interface Person3 {
   enum_role_value?: Role;
   enum_role_string?: RoleString;
 }
-const person3: Person3 = {
+const person: Person = {
   name: "Dingo",
   age: 1000,
   hobbies: ['sports', 'cookies'],
@@ -29,7 +29,7 @@ const person3: Person3 = {
 };
 
 
-for (const hobby of person3.hobbies) {
+for (const hobby of person.hobbies) {
   console.log(hobby.toUpperCase());
 }
 
