@@ -15,12 +15,17 @@ class Department {
   }
   
   printEmployeeInfo(): void {
-    console.log(this.employees);
+    console.log("Number of employees",this.employees.length);
+    console.log("A list of employees",this.employees);
   }
 }
 
 const marketing = new Department("Marketing");
 
 marketing.describe();
+
 marketing.addEmployee("Dingo");
+marketing.printEmployeeInfo();
+
+marketing.addEmployee("Bingo");
 marketing.printEmployeeInfo();
