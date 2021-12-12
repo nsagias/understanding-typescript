@@ -16,7 +16,7 @@ let favouriteActivitiesString1: string[];
 let favouriteActivitiesNumber1: number[];
 let favouriteActivitiesAny1: any[];
 
-for (const hobby of person2.hobbies) {
+for (const hobby of person3.hobbies) {
   console.log(hobby.toUpperCase());
 }
 
