@@ -8,7 +8,7 @@ interface Combine2 {
     input1: CombinerType, 
     input2: CombinerType, 
     resultConversion: CombinerConversionType
-  );
+  ): CombinerType;
 }
 
 function combine2(
