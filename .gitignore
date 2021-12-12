@@ -1,2 +1,5 @@
 node_modules
 *.js
+/dist
+*.js.map
+app.js.map
