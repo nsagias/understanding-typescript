@@ -7,4 +7,4 @@ class Department {
 }
 
 const marketing = new Department("Marketing");
-console.log(marketing)
+console.log(marketing);
