@@ -21,3 +21,5 @@ class Department {
 const marketing = new Department("Marketing");
 
 marketing.describe();
+marketing.addEmployee("Dingo");
+marketing.printEmployeeInfo();
