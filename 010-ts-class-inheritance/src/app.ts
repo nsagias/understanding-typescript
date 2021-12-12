@@ -42,9 +42,9 @@ class ITDepartment extends Department {
   }
 }
 
-const IT = new ITDepartment("IT",['Dingo']);
-IT.describe();
-IT.addEmployee("Tina");
-IT.addEmployee("Boo");
-IT.printEmployeeInfo();
+const it = new ITDepartment("IT",['Dingo']);
+it.describe();
+it.addEmployee("Tina");
+it.addEmployee("Boo");
+it.printEmployeeInfo();
 
