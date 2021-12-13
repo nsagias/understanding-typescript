@@ -48,3 +48,17 @@ it.addEmployee("Tina");
 it.addEmployee("Boo");
 it.printEmployeeInfo();
 
+
+class AccountingDeparment extends Department {
+  constructor(id: string, private reports: string[]){
+    super(id, "Accounting");
+  }
+  addReport(text: string): void {
+    this.reports = [...this.reports, text];
+  }
+
+  printReports(): void {
+    console.log("Here are the accounting reports",this.reports);
+  }
+
+}
