@@ -53,6 +53,14 @@ class AccountingDeparment extends Department {
   constructor(id: string, private reports: string[]){
     super(id, "Accounting");
   }
+
+  addEmployee(name: string) {
+    if (name === "AnyCondition") {
+      return;
+    }
+    this.employees = [...this.employees, name];
+  }
+
   addReport(text: string): void {
     this.reports = [...this.reports, text];
   }
@@ -60,5 +68,11 @@ class AccountingDeparment extends Department {
   printReports(): void {
     console.log("Here are the accounting reports",this.reports);
   }
-
 }
+
+const ac = new AccountingDeparment("AC", []);
+ac.addEmployee("AnyCondition");
+ac.addEmployee("Fun Person");
+ac.printEmployeeInfo();
+ac.addReport("Error in ledger...");
+ac.printReports();
