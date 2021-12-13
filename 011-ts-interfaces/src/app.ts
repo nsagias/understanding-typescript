@@ -4,7 +4,7 @@ interface AddFn {
 
 
 interface Named {
-  readonly name: string;
+  readonly name?: string;
   outputName?: string;
   nameMethod?(): string;
 }
@@ -16,11 +16,11 @@ interface PersonInterface extends Named {
 }
 
 interface SecondInterface {
-  name: string;  // second inteface has the same as PersonInterface
+  name?: string;  // second inteface has the same as PersonInterface
 }
 
 class Person implements PersonInterface, SecondInterface, Named {
-   name: string;
+   name?: string;
    constructor (name: string) {
      this.name = name;
    }
