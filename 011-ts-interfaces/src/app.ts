@@ -6,7 +6,7 @@ interface PersonInterface {
 }
 
 interface SecondInterface {
-  name: string;
+  name: string;  // second inteface has the same as PersonInterface
 }
 
 class Person implements PersonInterface, SecondInterface {
