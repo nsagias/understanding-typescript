@@ -27,7 +27,11 @@ class Person implements PersonInterface, SecondInterface, Named {
      }
    }
    greet(phrase:string) {
-    console.log(`${phrase} ${this.name}`);
+     if (this.name) {
+       console.log(`${phrase} ${this.name}`);
+     } else {
+       console.log("Hello!");
+     }
    }
 }
 
