@@ -21,7 +21,7 @@ interface SecondInterface {
 
 class Person implements PersonInterface, SecondInterface, Named {
    name?: string;
-   constructor (name: string) {
+   constructor (name?: string) {
      if (name) {
        this.name = name;
      }
