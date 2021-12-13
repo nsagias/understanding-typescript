@@ -1,5 +1,8 @@
-interface PersonInterface {
+interface Named {
   readonly name: string;
+}
+
+interface PersonInterface extends Named {
   // age: number;
 
   greet(phrase: string): void;
@@ -9,7 +12,7 @@ interface SecondInterface {
   name: string;  // second inteface has the same as PersonInterface
 }
 
-class Person implements PersonInterface, SecondInterface {
+class Person implements PersonInterface, SecondInterface, Named {
    name: string;
    constructor (name: string) {
      this.name = name;
