@@ -14,3 +14,5 @@ user1 = {
     console.log(`${phrase} ${this.name}`)
   }
 };
+
+user1.greet("Hello there")
