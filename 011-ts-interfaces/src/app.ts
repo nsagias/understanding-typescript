@@ -14,6 +14,9 @@ class Person implements PersonInterface, SecondInterface {
    constructor (name: string) {
      this.name = name;
    }
+   greet(phrase:string) {
+    console.log(`${phrase} ${this.name}`);
+   }
 }
 
 let user1: PersonInterface;
