@@ -53,7 +53,8 @@ class AccountingDeparment extends Department {
   constructor(id: string, private reports: string[]){
     super(id, "Accounting");
   }
-
+   
+  //overding method
   addEmployee(name: string) {
     if (name === "AnyCondition") {
       return;
