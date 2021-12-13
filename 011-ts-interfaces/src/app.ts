@@ -5,6 +5,8 @@ interface AddFn {
 
 interface Named {
   readonly name: string;
+  outputName?: string;
+  nameMethod?(): string;
 }
 
 interface PersonInterface extends Named {
