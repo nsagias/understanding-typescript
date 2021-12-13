@@ -19,14 +19,16 @@ class Person implements PersonInterface, SecondInterface {
    }
 }
 
-let user1: PersonInterface;
+// let user1: PersonInterface;
 
-user1 = {
-  name: 'Nick',
-  // age: 1000,
-  greet(phrase: string) {
-    console.log(`${phrase} ${this.name}`);
-  }
-};
+// user1 = {
+//   name: 'Nick',
+//   // age: 1000,
+//   greet(phrase: string) {
+//     console.log(`${phrase} ${this.name}`);
+//   }
+// };
 
-user1.greet("Hello there"); 
+let user1 = new Person("Nick");
+
+user1.greet("Hello there..."); 
