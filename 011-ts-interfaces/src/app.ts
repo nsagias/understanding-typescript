@@ -22,7 +22,9 @@ interface SecondInterface {
 class Person implements PersonInterface, SecondInterface, Named {
    name?: string;
    constructor (name: string) {
-     this.name = name;
+     if (name) {
+       this.name = name;
+     }
    }
    greet(phrase:string) {
     console.log(`${phrase} ${this.name}`);
