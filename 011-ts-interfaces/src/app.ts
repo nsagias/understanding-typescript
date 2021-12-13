@@ -11,8 +11,8 @@ user1 = {
   name: 'Nick',
   age: 1000,
   greet(phrase: string) {
-    console.log(`${phrase} ${this.name}`)
+    console.log(`${phrase} ${this.name}`);
   }
 };
 
-user1.greet("Hello there")
+user1.greet("Hello there");
