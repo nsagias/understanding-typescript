@@ -104,11 +104,28 @@ useVehicle(t1);
 
 
 interface Bird {
+  type: "bird";
   flyingSpeed: number;
 }
 
 interface Horse {
+  type: "horse";
   runningSpeed: number;
 }
 
 type Animal = Bird | Horse;
+
+function locomotionAnimal(animal: Animal): void {
+  let speed;
+  switch(animal.type) {
+    case 'bird':
+      speed = animal.flyingSpeed;
+      break;
+    case 'horse':
+      speed = animal.runningSpeed
+  }
+  console.log(`The animals speed  ${speed}`)
+}
+
+locomotionAnimal({type: 'bird', flyingSpeed:10})
+locomotionAnimal({type: 'horse', runningSpeed:10})
