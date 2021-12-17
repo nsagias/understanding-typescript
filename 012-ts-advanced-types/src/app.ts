@@ -60,6 +60,12 @@ printEmployeeInformation({name:"Nick", startDate: new Date()});
 // Type Guard with classes
 class Car {
   drive() {
-    console.log();
+    console.log('Car is driving...');
+  }
+}
+
+class Truek {
+  driving() {
+    console.log('Truck is driving...');
   }
 }
