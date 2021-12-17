@@ -3,3 +3,7 @@ type Admin = {
   privileges: string[];
 }
 
+type Employee = {
+  name: string;
+  startDate: Date;
+}
