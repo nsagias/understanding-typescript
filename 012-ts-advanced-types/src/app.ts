@@ -76,3 +76,5 @@ class Truck {
 // union type
 type Vehicle =  Car | Truck;
 
+const c1 = new Car();
+const t1 = new Truck();
