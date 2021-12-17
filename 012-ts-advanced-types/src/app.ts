@@ -39,12 +39,16 @@ function add(a: CombinedTypes, b: CombinedTypes) {
 
 type UnknownEmployeeType = Employee | Admin;
 
+
+const PRIVILEGES = 'privileges';
+const STARTDATE = 'startDate'; 
+
 function printEmployeeInformation(employee: UnknownEmployeeType): void {
   console.log(`Name of ${employee.name}`);
-  if ('privileges' in employee) {
+  if (PRIVILEGES in employee) {
     console.log(`Priviledge of ${employee.privileges}`);
   }
-  if ('startDate' in employee) {
+  if (STARTDATE in employee) {
     console.log(`Start date ${employee.startDate}`);
   }
 }
