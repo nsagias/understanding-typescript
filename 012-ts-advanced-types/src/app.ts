@@ -35,3 +35,12 @@ function add(a: CombinedTypes, b: CombinedTypes) {
   }
   return a + b;
 }
+
+
+type UnknownEmployeeType = Employee | Admin;
+
+function printEmployeeInformation(employee: UnknownEmployeeType): void {
+  console.log(`Name of ${employee.name}`);
+  console.log(`Priviledge of ${employee.privileges}`
+  );
+}
