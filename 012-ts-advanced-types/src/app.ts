@@ -29,6 +29,7 @@ type Universal = CombinedTypes & NumericType;
 
 // using intersecting types in a function
 function add(a: CombinedTypes, b: CombinedTypes) {
+  // this is a Type Guard
   if (typeof a === 'string' || typeof b === 'string') {
     return a.toString() + b.toString();
   }
