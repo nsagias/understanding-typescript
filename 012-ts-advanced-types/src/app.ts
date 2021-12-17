@@ -72,3 +72,7 @@ class Truck {
     console.log(`Loading cargo ...${amount}`);
   }
 }
+
+// union type
+type Vehicle =  Car | Truck;
+
