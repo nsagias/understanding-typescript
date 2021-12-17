@@ -81,6 +81,8 @@ const t1 = new Truck();
 
 function useVehicle(vehicle: Vehicle): void {
   vehicle.drive();
-  vehicle.loadingCargo(1000);
+  if ('loadingCargo' in vehicle) {
+    vehicle.loadingCargo(1000);
+  }
 
 }
