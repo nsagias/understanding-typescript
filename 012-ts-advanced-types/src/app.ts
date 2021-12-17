@@ -25,3 +25,12 @@ type NumericType = number | boolean;
 
 // intersecton combined types
 type Universal = CombinedTypes & NumericType;
+
+
+// using intersecting types in a function
+function add(a: CombinedTypes, b: CombinedTypes) {
+  if (typeof a === 'string' || typeof b === 'string') {
+    return a.toString() + b.toString();
+  }
+  return a + b;
+}
