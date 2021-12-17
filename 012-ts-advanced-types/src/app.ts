@@ -79,10 +79,10 @@ type Vehicle =  Car | Truck;
 const c1 = new Car();
 const t1 = new Truck();
 
+const LOADING_CARGO = 'loadingCargo';
 function useVehicle(vehicle: Vehicle): void {
   vehicle.drive();
-  if ('loadingCargo' in vehicle) {
+  if (LOADING_CARGO in vehicle) {
     vehicle.loadingCargo(1000);
   }
-
 }
