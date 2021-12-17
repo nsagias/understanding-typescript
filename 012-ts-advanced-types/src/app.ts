@@ -65,7 +65,7 @@ class Car {
 }
 
 class Truck {
-  driving() {
+  drive() {
     console.log('Truck is driving...');
   }
   loadingCargo(amount: number) {
@@ -78,3 +78,9 @@ type Vehicle =  Car | Truck;
 
 const c1 = new Car();
 const t1 = new Truck();
+
+function useVehicle(vehicle: Vehicle): void {
+  vehicle.drive();
+  vehicle.loadingCargo(1000);
+
+}
