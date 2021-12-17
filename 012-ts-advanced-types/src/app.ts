@@ -96,3 +96,19 @@ function useVehicle(vehicle: Vehicle): void {
 }
 useVehicle(c1);
 useVehicle(t1);
+
+
+
+// Descriminated Union pattern for objects
+// could use classes again
+
+
+interface Bird {
+  flyingSpeed: number;
+}
+
+interface Horse {
+  runningSpeed: number;
+}
+
+type Animal = Bird | Horse;
