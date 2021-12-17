@@ -1,1 +1,5 @@
-console.log('get started with advanced types');
+type Admin = {
+  name: string;
+  privileges: string[];
+}
+
