@@ -79,10 +79,18 @@ type Vehicle =  Car | Truck;
 const c1 = new Car();
 const t1 = new Truck();
 
-const LOADING_CARGO = 'loadingCargo';
+// const LOADING_CARGO = 'loadingCargo';
+// function useVehicle(vehicle: Vehicle): void {
+//   vehicle.drive();
+//   if (LOADING_CARGO in vehicle) {
+//     vehicle.loadingCargo(1000);
+//   }
+// }
+
+// use classes ad type guards
 function useVehicle(vehicle: Vehicle): void {
   vehicle.drive();
-  if (LOADING_CARGO in vehicle) {
+  if (vehicle instanceof Truck) {
     vehicle.loadingCargo(1000);
   }
 }
