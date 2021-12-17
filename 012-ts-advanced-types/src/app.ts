@@ -64,8 +64,11 @@ class Car {
   }
 }
 
-class Truek {
+class Truck {
   driving() {
     console.log('Truck is driving...');
+  }
+  loadingCargo(amount: number) {
+    console.log(`Loading cargo ...${amount}`);
   }
 }
