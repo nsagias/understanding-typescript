@@ -86,3 +86,5 @@ function useVehicle(vehicle: Vehicle): void {
     vehicle.loadingCargo(1000);
   }
 }
+useVehicle(c1);
+useVehicle(t1);
