@@ -41,6 +41,12 @@ type UnknownEmployeeType = Employee | Admin;
 
 function printEmployeeInformation(employee: UnknownEmployeeType): void {
   console.log(`Name of ${employee.name}`);
-  console.log(`Priviledge of ${employee.privileges}`
-  );
+  if ('privileges' in employee) {
+    console.log(`Priviledge of ${employee.privileges}`);
+  }
+  if ('startDate' in employee) {
+    console.log(`Start date ${employee.startDate}`);
+  }
 }
+
+printEmployeeInformation(e1);
