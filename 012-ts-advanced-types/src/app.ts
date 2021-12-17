@@ -55,3 +55,11 @@ function printEmployeeInformation(employee: UnknownEmployeeType): void {
 
 printEmployeeInformation(e1);
 printEmployeeInformation({name:"Nick", startDate: new Date()});
+
+
+// Type Guard with classes
+class Car {
+  drive() {
+    console.log();
+  }
+}
