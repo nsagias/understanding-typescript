@@ -69,3 +69,5 @@ function countAndDescribe<T extends hasLength>(element: T){
   }
   return [element, descriptionText];
 }
+
+console.log(countAndDescribe('Hi Nick!'));
