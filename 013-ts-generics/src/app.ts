@@ -10,7 +10,7 @@ const names6: Array<string | number> = [];
 
 // promises type
 // const promise = new Promise((resolve, reject) => {});
-const promise: Promise<string> = new Promise((resolve, reject) => {
+const promise: Promise<string> = new Promise((resolve) => {
   setTimeout( () => {
     resolve('This is done');
   }, 2000);
@@ -31,3 +31,6 @@ function merge2<T, U, V>(objA: T,objB: U, objC: V) {
 
 const mergeObj =  merge<{name: string, hobbies: string[]}, {age: number}>({name: "Nick", hobbies: ['fun']}, {age: 1000});
 const mergeOb2 =  merge2<{name: string},{hobbies: string[]}, {age: number}>({name: "Nick"}, {hobbies: ['any']}, {age: 1000});
+
+console.log("mergeObj:",mergeObj);
+console.log("mergeObj2:",mergeOb2);
