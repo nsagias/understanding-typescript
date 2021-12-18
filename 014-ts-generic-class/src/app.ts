@@ -24,6 +24,7 @@ console.log(textStorage.getItems());
 textStorage.removeItem('Dingo');
 console.log(textStorage.getItems());
 
+// number example
 const numberStorage = new DataStorage<number>();
 numberStorage.addItem(1);
 numberStorage.addItem(2);
