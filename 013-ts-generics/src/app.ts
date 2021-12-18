@@ -7,3 +7,6 @@ const names6: Array<string | number> = [];
 
 // can call string methods and no complaints 
 names4[0].split(' ');
+
+// promises type
+const promise = new Promise((resolve, reject) => {});
