@@ -18,3 +18,10 @@ const promise: Promise<string> = new Promise((resolve, reject) => {
 
 promise.then(x => console.log(x));
 
+
+// custom Generics Functions
+function merge<T, U>(objA: T, objB: U) {
+  return Object.assign(objA, objB);
+}
+
+const mergeObj =  merge({name: "Nick"}, {age: 1000});
