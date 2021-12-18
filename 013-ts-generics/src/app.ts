@@ -36,6 +36,14 @@ function merge4<T extends object, U extends object, V extends object>(objA: T,ob
   return Object.assign(objA, objB, objC);
 }
 
+// 
+interface Person {
+  name: string
+}
+function merge5<T extends Person, U extends object>(objA: T, objB: U) {
+  return Object.assign(objA, objB);
+}
+
 
 const mergeObj =  merge<{name: string, hobbies: string[]}, {age: number}>({name: "Nick", hobbies: ['fun']}, {age: 1000});
 const mergeOb2 =  merge2<{name: string},{hobbies: string[]}, {age: number}>({name: "Nick"}, {hobbies: ['any']}, {age: 1000});
