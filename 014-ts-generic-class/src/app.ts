@@ -15,3 +15,8 @@ class DataStorage<T> {
     return [...this.data];
   }
 }
+
+// string example
+const textStorage = new DataStorage<string>();
+textStorage.addItem('Nick');
+console.log(textStorage.getItems());
