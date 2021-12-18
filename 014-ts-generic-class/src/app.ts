@@ -8,6 +8,9 @@ class DataStorage<T> {
   }
 
   removeItem(item: T) {
+    if (this.data.indexOf(item) === -1) {
+      return;
+    }
     this.data.splice(this.data.indexOf(item), 1);
   }
 
@@ -31,3 +34,11 @@ numberStorage.addItem(2);
 console.log(numberStorage.getItems());
 numberStorage.removeItem(2);
 console.log(numberStorage.getItems());
+
+// objects example
+const objectStorage = new DataStorage<object>();
+objectStorage.addItem({name: "Nick"});
+objectStorage.addItem({name: "Dingo"});
+console.log(objectStorage.getItems());
+objectStorage.removeItem({name: "Nick"});
+console.log(objectStorage.getItems());
