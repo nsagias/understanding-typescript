@@ -19,4 +19,14 @@ class DataStorage<T> {
 // string example
 const textStorage = new DataStorage<string>();
 textStorage.addItem('Nick');
+textStorage.addItem('Dingo');
 console.log(textStorage.getItems());
+textStorage.removeItem('Dingo');
+console.log(textStorage.getItems());
+
+const numberStorage = new DataStorage<number>();
+numberStorage.addItem(1);
+numberStorage.addItem(2);
+console.log(numberStorage.getItems());
+numberStorage.removeItem(2);
+console.log(numberStorage.getItems());
