@@ -22,3 +22,9 @@ function createCourseGoal2(
   courseGoal.completeUntil = date;
   return courseGoal as CourseGoal; // type cast
 }
+
+
+// Readonly type
+const names: Readonly<string[]> = ["Nick", "Dingo"];
+names.push("Bingo");
+names.pop();
