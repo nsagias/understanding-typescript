@@ -60,7 +60,7 @@ interface hasLength {
   length: number;
 }
 
-function countAndDescribe<T extends hasLength>(element: T){
+function countAndDescribe<T extends hasLength>(element: T): [T, string]{
   let descriptionText = "No value here";
   if (element.length === 1) {
     descriptionText = "Got 1 element";
