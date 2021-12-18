@@ -71,3 +71,9 @@ function countAndDescribe<T extends hasLength>(element: T): [T, string]{
 }
 
 console.log(countAndDescribe([]));
+
+
+// keyof Constraint
+function extractAndConvert<T extends object, U  extends keyof T >(obj: T, key: U) {
+  return obj[key];
+}
