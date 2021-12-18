@@ -70,4 +70,4 @@ function countAndDescribe<T extends hasLength>(element: T): [T, string]{
   return [element, descriptionText];
 }
 
-console.log(countAndDescribe('Hi Nick!'));
+console.log(countAndDescribe([]));
