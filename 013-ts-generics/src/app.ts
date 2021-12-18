@@ -60,7 +60,7 @@ interface hasLength {
   length: number;
 }
 
-function countAndDescribe(element){
+function countAndDescribe<T extends hasLength>(element: T){
   let descriptionText;
 
   return [element, descriptionText];
