@@ -1,1 +1,7 @@
-console.log('generic utility types ... ');
+// Partial Type
+
+interface CourseGoal {
+  title: string;
+  description: string;
+  completeUntil: Date;
+}
