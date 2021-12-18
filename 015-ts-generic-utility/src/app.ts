@@ -26,5 +26,5 @@ function createCourseGoal2(
 
 // Readonly type
 const names: Readonly<string[]> = ["Nick", "Dingo"];
-names.push("Bingo");
-names.pop();
+// names.push("Bingo");
+// names.pop();
