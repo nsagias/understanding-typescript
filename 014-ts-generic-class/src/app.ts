@@ -1,11 +1,12 @@
-class DataStorage {
-  private data = [];
+class DataStorage<T> {
+  private data: T[] = [];
 
-  addItem(item) {
+  addItem(item: T) {
     this.data.push(item);
+    
   }
 
-  removeItem(item) {
+  removeItem(item: T) {
     this.data.splice(this.data.indexOf(item), 1);
   }
 
