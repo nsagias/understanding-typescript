@@ -10,7 +10,7 @@ const names6: Array<string | number> = [];
 
 // promises type
 // const promise = new Promise((resolve, reject) => {});
-const promise = new Promise((resolve) => {
+const promise: Promise<string> = new Promise((resolve) => {
   setTimeout( () => {
     resolve('This is done');
   }, 2000);
