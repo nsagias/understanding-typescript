@@ -2,8 +2,9 @@ class DataStorage<T> {
   private data: T[] = [];
 
   addItem(item: T) {
-    this.data.push(item);
-    
+    // this.data.push(item);
+    const newItem = [ ...this.data, item ];
+    this.data = newItem;
   }
 
   removeItem(item: T) {
