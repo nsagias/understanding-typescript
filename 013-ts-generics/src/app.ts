@@ -54,3 +54,14 @@ const mergeOb2 =  merge2<{name: string},{hobbies: string[]}, {age: number}>({nam
 
 console.log("mergeObj:",mergeObj);
 console.log("mergeObj2:",mergeOb2);
+
+
+interface hasLength {
+  length: number;
+}
+
+function countAndDescribe(element){
+  let descriptionText;
+
+  return [element, descriptionText];
+}
