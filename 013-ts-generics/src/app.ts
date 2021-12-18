@@ -87,3 +87,6 @@ function extractAndConvertString<T extends object, U  extends keyof T >(
   ): string {
   return `Value is ${obj[key]}`;
 }
+
+console.log(extractAndConvertObject({name: "nick"}, "name"));
+console.log(extractAndConvertString({name: "nick"}, "name"));
