@@ -61,7 +61,11 @@ interface hasLength {
 }
 
 function countAndDescribe<T extends hasLength>(element: T){
-  let descriptionText;
-
+  let descriptionText = "No value here";
+  if (element.length === 1) {
+    descriptionText = "Got 1 element";
+  } else if (element.length > 1) {
+    descriptionText = `Has ${element.length} elements.`;
+  }
   return [element, descriptionText];
 }
