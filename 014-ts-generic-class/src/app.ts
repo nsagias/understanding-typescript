@@ -1,4 +1,4 @@
-class DataStorage<T> {
+class DataStorage<T extends string | number | boolean > {
   private data: T[] = [];
 
   addItem(item: T) {
